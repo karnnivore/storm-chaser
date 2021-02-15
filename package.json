@@ -1,0 +1,23 @@
+{
+  "name": "storm-chaser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karnnivore/storm-chaser.git"
+  },
+  "author": "Nick Chinsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karnnivore/storm-chaser/issues"
+  },
+  "homepage": "https://github.com/karnnivore/storm-chaser#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.28",
+    "typescript": "^4.1.5"
+  }
+}
