@@ -11,12 +11,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LandingComponent } from './landing/landing.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LandingComponent
+    LandingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
