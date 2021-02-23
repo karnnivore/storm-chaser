@@ -1,41 +1,59 @@
-<div class="callToActions">
-  <div>
-    <h1>Find Leads Faster</h1> 
-    <p>We use current weather data points to find the optimal leads for your company</p>
-    <button mat-raised-button color="primary">Get Started</button>
-  </div>
-  <div>
-    <h1>Already Chasing?</h1> 
-    <p>Sign in to your account here</p>
-    <button mat-raised-button color="accent">Login</button>
-  </div>
-  <div>
-    <h1>Questions</h1> 
-    <p>Feel free to contact us, we'd love to hear your feedback</p>
-    <button mat-raised-button color="warn">Contact</button>
-  </div>
+<div id="landingContainer">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <div>
+        <h1>Find Leads Faster</h1> 
+        <p>We use current weather data points to find the optimal leads for your company</p>
+        <button mat-raised-button color="primary" routerLink="/register-component">Get Started</button>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>
+      
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div>
+        <h1>Already Chasing?</h1> 
+        <p>Sign in to your account here</p>
+        <a mat-raised-button color="accent" routerLink="/login-component">Login</a>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div>
+        <h1>Questions</h1> 
+        <p>Feel free to contact us, we'd love to hear your feedback</p>
+        <button mat-raised-button color="warn">Contact</button>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
+  <mat-grid-list cols="2" rowHeight="2:1" id="landingSection">
+    <mat-grid-tile>
+      <div class="landingContent">
+        <h2>About Us</h2>
+        <p>We're a Canadian startup that helps construction companies & contractors find new leads intelligently, 
+          using local storm data in tandem with our custom software solution to generate more usable and actionable
+          leads. We offer advanced lead generation technology specific to the construction industry. 
+        </p>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="landingContent">
+        <h2>Features</h2>
+        <p>Our web application uses up-to-date weather data generating a usable call list for local areas effected
+          by major weather anomolies. This results in warmer leads, more conversions and new clients who are more likely
+          to need repair/construction services.</p>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="landingContent">
+        <h2>Our Team</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+          exercitation"</p>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
-<div class="info-section">
-  <div>
-    <h2>About Us</h2>
-    <p>We're a Canadian startup that helps construction companies & contractors find new leads intelligently, 
-      using local storm data in tandem with our custom software solution to generate more usable and actionable
-      leads. We offer advanced lead generation technology specific to the construction industry. 
-    </p>
-  </div>
-  <div>
-    <h2>Features</h2>
-    <p>Our web application uses up-to-date weather data generating a usable call list for local areas effected
-      by major weather anomolies. This results in warmer leads, more conversions and new clients who are more likely
-      to need repair/construction services.</p>
-  </div>
-  <div>
-    <h2>Our Team</h2>
-    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-      anim id est laborum."</p>
-  </div>
-</div>
+
+<router-outlet></router-outlet>
