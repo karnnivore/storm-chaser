@@ -3,7 +3,8 @@
   max-width: 550px;
   width: 100%;
   margin: auto;
-  padding: 10em;
+  padding-top: 10em;
+  padding-bottom: 40px;
 }
 
 .login-form {
@@ -19,5 +20,9 @@
 
 h2 {
   font-size: 50px;
+  padding-left: 160px;
 }
 
+.loginButtonContainer {
+  padding-left: 680px;
+}
