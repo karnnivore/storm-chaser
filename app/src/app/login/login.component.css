@@ -36,17 +36,14 @@ h2 {
     margin-top: 32px;
 }
 
-.signupButtonContainer {
-  padding-left: 673px;
-  padding-top: 65px;
-}
-
-.pContainer {
-    padding-top: 20px;
-    padding-left: 525px;
+#signupButton {
+    width: 100%;
+    margin-top: 20px;
 }
 
 p {
     font-size: 20px;
     color: #555555;
+    padding-top: 20px;
+    text-align: center;
 }
