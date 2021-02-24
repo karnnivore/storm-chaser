@@ -1,3 +1,8 @@
+h2 {
+  font-size: 50px;
+  padding-left: 160px;
+}
+
 .loginContainer {
   min-width: 200px;
   max-width: 550px;
@@ -18,11 +23,21 @@
   padding-top: 25px;
 }
 
-h2 {
-  font-size: 50px;
-  padding-left: 160px;
-}
-
 .loginButtonContainer {
   padding-left: 680px;
+}
+
+.signupButtonContainer {
+  padding-left: 673px;
+  padding-top: 65px;
+}
+
+.pContainer {
+    padding-top: 20px;
+    padding-left: 525px;
+}
+
+p {
+    font-size: 20px;
+    color: #555555;
 }
