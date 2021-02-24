@@ -1,1 +1,6 @@
 node_modules/
+*.sqlite
+/.vs/VSWorkspaceState.json
+/.vs/ProjectSettings.json
+/.vs/storm-chaser/config/applicationhost.config
+/.vs/storm-chaser/v16/.suo
