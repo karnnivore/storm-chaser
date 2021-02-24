@@ -10,6 +10,14 @@ h2 {
   margin: auto;
   padding-top: 10em;
   padding-bottom: 40px;
+  padding-right: 100px;
+}
+
+.loginMatCard {
+  max-width: 550px;
+  min-width: 300px;
+  width: 100%;
+  padding: 5em;
 }
 
 .login-form {
@@ -23,8 +31,9 @@ h2 {
   padding-top: 25px;
 }
 
-.loginButtonContainer {
-  padding-left: 680px;
+#loginButton {
+    width: 100%;
+    margin-top: 32px;
 }
 
 .signupButtonContainer {
