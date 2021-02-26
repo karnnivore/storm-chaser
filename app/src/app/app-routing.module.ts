@@ -9,12 +9,14 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { LeadsListComponent } from './leads-list/leads-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactConfirmationComponent } from './contact-confirmation/contact-confirmation.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login-component', component: LoginComponent },
   { path: 'register-component', component: RegisterComponent },
-  { path: 'contact-component', component: ContactComponent },
+  { path: 'contact-component', component: ContactComponent, },
+  { path: 'contact-confirmation-component', component: ContactConfirmationComponent },
   { path: 'dashboard-component', component: DashboardComponent, 
     children: [
       {

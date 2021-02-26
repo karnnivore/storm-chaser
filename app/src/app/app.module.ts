@@ -27,6 +27,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { LeadsListComponent } from './leads-list/leads-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactConfirmationComponent } from './contact-confirmation/contact-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactComponent } from './contact/contact.component';
     CustomerListComponent,
     LeadsListComponent,
     ContactsComponent,
-    ContactComponent
+    ContactComponent,
+    ContactConfirmationComponent
   ],
   imports: [
     BrowserModule,
