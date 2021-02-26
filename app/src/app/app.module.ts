@@ -26,6 +26,7 @@ import { MapComponent } from './map/map.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { LeadsListComponent } from './leads-list/leads-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     MapComponent,
     CustomerListComponent,
     LeadsListComponent,
-    ContactsComponent
+    ContactsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
