@@ -23,6 +23,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
 
 //chart import
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Chart } from 'chart.js';
+import { ChartsModule } from 'ng2-charts';
 
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
@@ -69,6 +71,7 @@ import { ChartComponent } from './chart/chart.component';
     MatListModule,
     GoogleMapsModule,
     MDBBootstrapModule.forRoot(),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
