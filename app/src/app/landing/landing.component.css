@@ -1,6 +1,6 @@
 h1 {
   font-size: 50px;
-  color: black;
+  color: #36F2FE;
 }
 
 h2 {
@@ -12,11 +12,11 @@ p {
   line-height: 1.5em;
 }
 .landingText {
-  color: black;
+  color: #36F2FE;
 }
 #landingContainer {
   height: 100%;
-  background-color: #3B479D;
+  background-color: #392261;
   padding: 5em;
 }
 .mat-grid-list {
