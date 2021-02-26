@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { LandingComponent } from './landing/landing.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login-component', component: LoginComponent },
   { path: 'register-component', component: RegisterComponent },
+  { path: 'dashboard-component', component: DashboardComponent },
 ];
 
 @NgModule({
