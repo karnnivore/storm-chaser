@@ -10,6 +10,7 @@ import { LeadsListComponent } from './leads-list/leads-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactConfirmationComponent } from './contact-confirmation/contact-confirmation.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: 'contacts',
         component: ContactsComponent
+      },
+      {
+        path: 'chart',
+        component: ChartComponent
       }
     ] },
 ];

@@ -21,6 +21,9 @@ import { MatListModule } from '@angular/material/list';
 //google map import
 import { GoogleMapsModule } from '@angular/google-maps';
 
+//chart import
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -31,6 +34,7 @@ import { LeadsListComponent } from './leads-list/leads-list.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactConfirmationComponent } from './contact-confirmation/contact-confirmation.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,8 @@ import { ContactConfirmationComponent } from './contact-confirmation/contact-con
     LeadsListComponent,
     ContactsComponent,
     ContactComponent,
-    ContactConfirmationComponent
+    ContactConfirmationComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +68,7 @@ import { ContactConfirmationComponent } from './contact-confirmation/contact-con
     MatSidenavModule,
     MatListModule,
     GoogleMapsModule,
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

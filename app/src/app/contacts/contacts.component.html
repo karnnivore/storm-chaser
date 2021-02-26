@@ -1,1 +1,8 @@
-<p>contacts-component works</p>
+<div class="page-section">
+  <h3>Contacts List</h3>
+</div>
+<mat-selection-list #customers>
+  <mat-list-option *ngFor="let customer of typesOfCustomers">
+    {{customer}}
+  </mat-list-option>
+</mat-selection-list>
