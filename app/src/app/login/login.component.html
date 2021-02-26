@@ -3,10 +3,10 @@
     <mat-card-title>
       <h2>Sign-In</h2>
     </mat-card-title>
-    <form class="login-form">
+    <form class="login-form" [formGroup]="myForm">
       <mat-form-field class="login-full-width">
         <mat-label>Email</mat-label>
-        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. Nick@gmail.com">
+        <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" placeholder="Ex. Nick@gmail.com" required>
         <mat-hint>Email used to sign-up</mat-hint>
         <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
           Please enter a valid email address
@@ -15,7 +15,10 @@
       </mat-form-field>
       <mat-form-field class="login-full-width">
         <mat-label>Password</mat-label>
-        <input matInput placeholder="Ex. password1234" type="password">
+        <input matInput placeholder="Ex. password1234" formControlName="password" required type="password">
+        <mat-error *ngIf="myForm.hasError('required', 'password')">
+          <strong>Please enter your password</strong>
+        </mat-error>
       </mat-form-field>
       <!-- <a mat-raised-button href="linkhere">Link</a> -->
       <button mat-raised-button color="accent" id="loginButton" routerLink="/dashboard-component">Login</button>

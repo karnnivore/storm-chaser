@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormGroupDirective, NgForm, Validators, FormBuilder } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -15,6 +15,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  myForm: FormGroup;
 
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -23,7 +24,11 @@ export class LoginComponent implements OnInit {
 
   matcher = new MyErrorStateMatcher();
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {
+    this.myForm = this.formBuilder.group({
+      password: ['', [Validators.required]],
+    });
+  }
 
   ngOnInit(): void {
   }
