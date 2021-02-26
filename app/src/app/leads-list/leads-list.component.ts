@@ -11,5 +11,6 @@ export class LeadsListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  typesOfCustomers: string[] = ['Lead 1', 'Lead 2', 'Lead 3', 'Lead 4', 'Lead 5'];
 
 }
