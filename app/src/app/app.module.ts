@@ -15,11 +15,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MapComponent } from './map/map.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { LeadsListComponent } from './leads-list/leads-list.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LandingComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    MapComponent,
+    CustomerListComponent,
+    LeadsListComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +53,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FormsModule,
     MatInputModule,
     MatCardModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
