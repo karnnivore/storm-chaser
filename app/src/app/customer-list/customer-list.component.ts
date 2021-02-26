@@ -11,5 +11,5 @@ export class CustomerListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  typesOfCustomers: string[] = ['Customer 1', 'Customer 2', 'Customer 3', 'Customer 4', 'Customer 5'];
 }
