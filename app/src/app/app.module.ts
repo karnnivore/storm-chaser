@@ -18,6 +18,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
+//google map import
+import { GoogleMapsModule } from '@angular/google-maps';
+
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -59,6 +62,7 @@ import { ContactConfirmationComponent } from './contact-confirmation/contact-con
     MatCardModule,
     MatSidenavModule,
     MatListModule,
+    GoogleMapsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
