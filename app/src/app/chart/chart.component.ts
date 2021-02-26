@@ -14,13 +14,13 @@ export class ChartComponent implements OnInit {
     responsive: true
   };
 
-  public barChartLabels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  public barChartLabels = ['2015', '2016', '2017', '2018', '2019', '2020', '2021'];
   public barChartType = 'bar' as const;
   public barChartLegend = true;
 
   public barChartData = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Houses Affected' },
+    { data: [28, 48, 40, 19, 45, 27, 19], label: 'Successful Businesses Acquired by Client' }
   ];
 
   ngOnInit() {
