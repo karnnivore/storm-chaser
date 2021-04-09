@@ -3,6 +3,6 @@
 </div>
 <mat-selection-list #customers>
   <mat-list-option *ngFor="let customer of typesOfCustomers">
-    {{customer}}
+    {{customer[0]}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{customer[1]}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{customer[2]}}
   </mat-list-option>
 </mat-selection-list>
